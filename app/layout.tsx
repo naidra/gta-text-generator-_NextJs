@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   generator: 'v0.dev',
   // add favicon
   icons: {
-    icon: '/images/GTA_logo.png'
+    icon: '/images/gta-logo.png'
   }
 };
 

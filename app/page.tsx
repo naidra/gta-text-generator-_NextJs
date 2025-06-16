@@ -336,7 +336,7 @@ export default function GTATextGenerator() {
           </div>
 
           <h1
-            className="text-5xl font-bold text-white mb-4 drop-shadow-lg text-glow"
+            className="text-5xl font-bold text-white mb-4 drop-shadow-lg"
             style={{
               fontFamily: "Pricedown, Impact, Arial Black, sans-serif",
             }}
