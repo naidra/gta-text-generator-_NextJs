@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Pricedown Font Loading - Authentic GTA Font from GitHub */
+@font-face {
+  font-family: "Pricedown";
+  src: url("/fonts/pricedown.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Fallback fonts if Pricedown fails to load */
+@font-face {
+  font-family: "Pricedown-Fallback";
+  src: url("https://fonts.cdnfonts.com/s/15011/pricedown.woff2") format("woff2"),
+    url("https://fonts.cdnfonts.com/s/15011/pricedown.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Canvas container styling */
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom utility classes */
+.text-glow {
+  text-shadow: 0 0 30px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.3);
+}
+
+.neon-grid {
+  background-image: linear-gradient(rgba(0, 191, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.glass-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+/* Horizontal scroll for game covers */
+.game-covers-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #4b5563 #1f2937;
+}
+
+.game-covers-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.game-covers-scroll::-webkit-scrollbar-track {
+  background: #1f2937;
+  border-radius: 3px;
+}
+
+.game-covers-scroll::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 3px;
+}
+
+.game-covers-scroll::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .grid.lg\:grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .lg\:col-span-2 {
+    order: 2;
+  }
+}
+
+.bg-secondary {
+  background-color: #1f2937 !important; /* Dark gray background */
+}
+.bg-primary {
+  background-color: #0f172a !important; /* Darker blue background */
+}
+.bg-light-secondary {
+  background-color: #5a5a5a !important; /* Light gray background */
+}
+
+.rounded-sm {
+  border-radius: 0.125rem !important; /* Tailwind's default small radius */
+}
+.rounded-md {
+  border-radius: 0.375rem !important; /* Tailwind's default medium radius */
+}
+.rounded-lg {
+  border-radius: 0.5rem !important; /* Tailwind's default large radius */
+}
+.rounded-xl {
+  border-radius: 0.75rem !important; /* Tailwind's default extra large radius */
+}
+.text-primary {
+  color: #60a5fa !important; /* Light blue text */
+}
+.text-secondary {
+  color: #d1d5db !important; /* Light gray text */
+}
+.text-accent {
+  color: #f59e0b !important; /* Yellow accent text */
+}
+.text-sm {
+  font-size: 0.875rem !important; /* Tailwind's default small text size */
+}
