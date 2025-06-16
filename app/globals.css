@@ -11,16 +11,6 @@
   font-display: swap;
 }
 
-/* Fallback fonts if Pricedown fails to load */
-@font-face {
-  font-family: "Pricedown-Fallback";
-  src: url("https://fonts.cdnfonts.com/s/15011/pricedown.woff2") format("woff2"),
-    url("https://fonts.cdnfonts.com/s/15011/pricedown.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* Custom scrollbar for dark theme */
 ::-webkit-scrollbar {
   width: 8px;

@@ -106,7 +106,7 @@ export default function GTATextGenerator() {
         try {
           const fallbackFont = new FontFace(
             "Pricedown-Fallback",
-            "url(https://fonts.cdnfonts.com/s/15011/pricedown.woff)",
+            "url(/fonts/pricedown.otf)",
           )
           await fallbackFont.load()
           document.fonts.add(fallbackFont)
@@ -120,19 +120,19 @@ export default function GTATextGenerator() {
       } catch (error) {
         console.error("Failed to load Pricedown font from GitHub:", error)
         // Try to load fallback
-        try {
-          const fallbackFont = new FontFace(
-            "Pricedown-Fallback",
-            "url(https://fonts.cdnfonts.com/s/15011/pricedown.woff)",
-          )
-          await fallbackFont.load()
-          document.fonts.add(fallbackFont)
-          setFontsLoaded(true)
-          console.log("Fallback font loaded")
-        } catch (fallbackError) {
-          console.error("All fonts failed to load:", fallbackError)
-          setFontsLoaded(true) // Continue with system fonts
-        }
+        // try {
+        //   const fallbackFont = new FontFace(
+        //     "Pricedown-Fallback",
+        //     "url(https://fonts.cdnfonts.com/s/15011/pricedown.woff)",
+        //   )
+        //   await fallbackFont.load()
+        //   document.fonts.add(fallbackFont)
+        //   setFontsLoaded(true)
+        //   console.log("Fallback font loaded")
+        // } catch (fallbackError) {
+        //   console.error("All fonts failed to load:", fallbackError)
+        //   setFontsLoaded(true) // Continue with system fonts
+        // }
       }
     }
 
