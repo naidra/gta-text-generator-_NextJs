@@ -310,7 +310,7 @@ export default function GTATextGenerator() {
           {/* GTA Game Covers Gallery */}
           <div className="flex justify-center mb-6">
             <div className="w-full max-w-4xl">
-              <div className="flex gap-4 overflow-x-auto game-covers-scroll justify-center pb-4 px-4">
+              <div className="flex gap-4 overflow-x-auto game-covers-scroll justify-center p-4">
                 {gameCovers.map((cover, index) => (
                   <div key={index} className="flex-shrink-0 relative group">
                     <Image
