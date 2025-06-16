@@ -355,7 +355,7 @@ export default function GTATextGenerator() {
               <CardHeader className="flex flex-row items-center justify-between border-b border-blue-500/20">
                 <CardTitle className="text-white text-xl font-bold">Preview</CardTitle>
                 <div className="flex gap-2">
-                  <Button
+                  {/* <Button
                     onClick={resetSettings}
                     variant="outline"
                     size="sm"
@@ -363,7 +363,7 @@ export default function GTATextGenerator() {
                   >
                     <RotateCcw className="w-4 h-4" />
                     Reset
-                  </Button>
+                  </Button> */}
                   <Button
                     onClick={exportImage}
                     size="sm"
