@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Gta font',
+  title: 'Gta font | Gta text generator',
   description: 'Gta text generator',
   generator: 'v0.dev',
   // add favicon
