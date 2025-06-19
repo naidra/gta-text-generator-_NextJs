@@ -348,7 +348,7 @@ export default function GTATextGenerator() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-6">
+        <div className="grid lg:grid-cols-3 gap-3">
           {/* Canvas Preview */}
           <div className="lg:col-span-2">
             <Card className="glass-card shadow-2xl">
@@ -374,7 +374,7 @@ export default function GTATextGenerator() {
                   </Button>
                 </div>
               </CardHeader>
-              <CardContent className="p-6">
+              <CardContent className="p-3">
                 <div className="bg-black/60 p-4 rounded-lg border border-cyan-500/30">
                   <canvas
                     ref={canvasRef}
@@ -412,23 +412,23 @@ export default function GTATextGenerator() {
           </div>
 
           {/* Controls */}
-          <div className="space-y-6">
+          <div className="space-y-6 md:pb-3">
             <Card className="glass-card shadow-2xl">
               <CardHeader className="border-b border-blue-500/20">
                 <CardTitle className="text-white text-xl font-bold">Text Settings</CardTitle>
               </CardHeader>
-              <CardContent className="p-6">
+              <CardContent className="p-3">
                 <Tabs defaultValue="basic" className="w-full">
                   <TabsList className="grid w-full grid-cols-2 bg-black/60 border border-blue-500/30 h-auto">
                     <TabsTrigger
                       value="basic"
-                      className="text-cyan-300 data-[state=active]:bg-blue-600/50 data-[state=active]:text-white"
+                      className="text-white data-[state=active]:bg-blue-600/50 data-[state=active]:text-white"
                     >
                       Style
                     </TabsTrigger>
                     <TabsTrigger
                       value="effects"
-                      className="text-cyan-300 data-[state=active]:bg-blue-600/50 data-[state=active]:text-white"
+                      className="text-white data-[state=active]:bg-blue-600/50 data-[state=active]:text-white"
                     >
                       Effects
                     </TabsTrigger>
@@ -594,7 +594,7 @@ export default function GTATextGenerator() {
               <CardHeader className="border-b border-blue-500/20">
                 <CardTitle className="text-white text-xl font-bold">Background</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4 p-6">
+              <CardContent className="space-y-4 p-3">
                 <div>
                   <Label className="text-white font-medium">Background Type</Label>
                   <Select
