@@ -60,7 +60,7 @@ export default function GTATextGenerator() {
 
   const [backgroundSettings, setBackgroundSettings] = useState<BackgroundSettings>({
     type: "color",
-    color: "#dbdbdb",
+    color: "#e6e7a6",
     image: null,
   })
 
